@@ -16,8 +16,6 @@
    TITLES, YEARS AND DIMENSIONS ARE LEFT EMPTY ON PURPOSE — they
    can't be read off a photograph. Until they are filled in, each
    caption reads "Title · year · medium · dimensions" as a reminder.
-   The medium is a first guess where the photograph makes it clear;
-   correct it wherever it is wrong.
 
    Order in the list = order on the page. Put the strongest work
    first in every section; that is the one people remember.
@@ -46,39 +44,31 @@ window.PORTFOLIO = {
     { image: "images/acrylics/two-small-panels.jpg", title: "", year: "", medium: "Acrylic on canvas", size: "", note: "A pair", alt: "Two small canvases, one blue with a tulip, one red with a flower" }
   ],
 
-  /* ---------- WORKS ON PAPER ---------- */
-  paper: [
-    { image: "images/paper/town-with-clocktower.jpg", title: "", year: "", medium: "", size: "", note: "", alt: "Town with a clock tower, balconies and fish, above a violet sea" },
-    { image: "images/paper/acropolis.jpg", title: "", year: "", medium: "", size: "", note: "", alt: "Rooftops and an orange tree with the Acropolis behind, two dancing silhouettes" },
-    { image: "images/paper/stairs-and-roofs.jpg", title: "", year: "", medium: "", size: "", note: "", alt: "Dense composition of stairs, tiled roofs, balconies and plants" },
-    { image: "images/paper/cactus-and-balcony.jpg", title: "", year: "", medium: "", size: "", note: "", alt: "Prickly pear cactus in front of a pink and violet house front" },
-    { image: "images/paper/houses-with-sun.jpg", title: "", year: "", medium: "", size: "", note: "", alt: "Row of houses under a large yellow sun, a figure climbing a patterned stair" },
-    { image: "images/paper/house-with-cat.jpg", title: "", year: "", medium: "", size: "", note: "", alt: "House with a balustrade and a black cat on the roof, under a washed blue sky" },
-    { image: "images/paper/house-and-sea.jpg", title: "", year: "", medium: "", size: "", note: "", alt: "House behind an iron gate on a mottled green and turquoise ground" },
-    { image: "images/paper/bordered-panel.jpg", title: "", year: "", medium: "", size: "", note: "", alt: "Upright composition with a painted border, figures, a sun and a plant" },
-    { image: "images/paper/ink-drawing.jpg", title: "", year: "", medium: "Ink on paper", size: "", note: "", alt: "Line drawing in black ink of a house with a spiral of smoke and a figure" }
-  ],
-
-  /* ---------- AQUARELLE — no photographs yet ---------- */
+  /* ---------- AQUARELLE ---------- */
   aquarelle: [
-    { image: "", title: "", year: "", medium: "Watercolour on paper", size: "", note: "", alt: "", slot: "images/aquarelle/01.jpg" },
-    { image: "", title: "", year: "", medium: "Watercolour on paper", size: "", note: "", alt: "", slot: "images/aquarelle/02.jpg" },
-    { image: "", title: "", year: "", medium: "Watercolour on paper", size: "", note: "", alt: "", slot: "images/aquarelle/03.jpg" },
-    { image: "", title: "", year: "", medium: "Watercolour on paper", size: "", note: "", alt: "", slot: "images/aquarelle/04.jpg" }
+    { image: "images/aquarelle/town-with-clocktower.jpg", title: "", year: "", medium: "Watercolour on paper", size: "", note: "", alt: "Town with a clock tower, balconies and fish, above a violet sea" },
+    { image: "images/aquarelle/acropolis.jpg", title: "", year: "", medium: "Watercolour on paper", size: "", note: "", alt: "Rooftops and an orange tree with the Acropolis behind, two dancing silhouettes" },
+    { image: "images/aquarelle/stairs-and-roofs.jpg", title: "", year: "", medium: "Watercolour on paper", size: "", note: "", alt: "Dense composition of stairs, tiled roofs, balconies and plants" },
+    { image: "images/aquarelle/cactus-and-balcony.jpg", title: "", year: "", medium: "Watercolour on paper", size: "", note: "", alt: "Prickly pear cactus in front of a pink and violet house front" },
+    { image: "images/aquarelle/houses-with-sun.jpg", title: "", year: "", medium: "Watercolour on paper", size: "", note: "", alt: "Row of houses under a large yellow sun, a figure climbing a patterned stair" },
+    { image: "images/aquarelle/house-with-cat.jpg", title: "", year: "", medium: "Watercolour on paper", size: "", note: "", alt: "House with a balustrade and a black cat on the roof, under a washed blue sky" },
+    { image: "images/aquarelle/house-and-sea.jpg", title: "", year: "", medium: "Watercolour on paper", size: "", note: "", alt: "House behind an iron gate on a mottled green and turquoise ground" },
+    { image: "images/aquarelle/bordered-panel.jpg", title: "", year: "", medium: "Watercolour on paper", size: "", note: "", alt: "Upright composition with a painted border, figures, a sun and a plant" },
+    { image: "images/aquarelle/ink-drawing.jpg", title: "", year: "", medium: "Ink on paper", size: "", note: "", alt: "Line drawing in black ink of a house with a spiral of smoke and a figure" }
   ],
 
-  /* ---------- NATURAL TEMPERA — the open section ---------- */
+  /* ---------- NATURAL TEMPERA — in progress ---------- */
   tempera: [
     { image: "", title: "", year: "", medium: "Natural tempera on panel", size: "", note: "", alt: "", slot: "images/tempera/01.jpg" },
     { image: "", title: "", year: "", medium: "Natural tempera on panel", size: "", note: "", alt: "", slot: "images/tempera/02.jpg" },
     { image: "", title: "", year: "", medium: "Natural tempera on panel", size: "", note: "", alt: "", slot: "images/tempera/03.jpg" },
     { image: "", title: "", year: "", medium: "Natural tempera on panel", size: "", note: "", alt: "", slot: "images/tempera/04.jpg" }
-  ],
-
-  /* ---------- APPLIED WORK — painted objects and printed textiles ---------- */
-  applied: [
-    { image: "images/applied/painted-chair.jpg", title: "", year: "", medium: "Acrylic on wood", size: "", note: "", alt: "Wooden chair painted in blue with eyes and waves on the seat" },
-    { image: "images/applied/tote-bag.jpg", title: "", year: "", medium: "Printed cotton", size: "", note: "", alt: "Cotton tote bag printed with a sailing boat, sun and figure, photographed on a rock by the sea" }
   ]
+
+  /* The painted chair and the printed tote bag are photographed and sitting in
+     images/applied/ but are not shown anywhere: they belong to none of the four
+     sections. To put them on the page, add a section back in index.html, or add
+     them to a section above as entries pointing at
+     images/applied/painted-chair.jpg and images/applied/tote-bag.jpg. */
 
 };

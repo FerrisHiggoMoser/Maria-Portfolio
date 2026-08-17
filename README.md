@@ -11,12 +11,11 @@ Open `index.html` in any browser and it works — from a USB stick, from a folde
 │   ├── styles.css          typography and layout
 │   └── site.js             rendering and the lightbox
 ├── images/
-│   ├── acrylics/           ← 9 paintings
-│   ├── paper/              ← 9 drawings
-│   ├── applied/            ← chair, tote bag
+│   ├── acrylics/           ← 9 paintings on canvas
+│   ├── aquarelle/          ← 9 watercolours
 │   ├── jewellery/          ← empty, waiting for photographs
-│   ├── aquarelle/          ← empty, waiting for photographs
-│   ├── tempera/            ← empty, waiting for photographs
+│   ├── tempera/            ← empty, work in progress
+│   ├── applied/            ← painted chair and tote bag, not shown on the page
 │   └── portrait/           maria.jpg (About) and studio.jpg (Working method)
 ├── documents/              cv.pdf, price list, portfolio PDF
 └── tools/prepare-images.sh batch-resize originals for the web
@@ -41,11 +40,15 @@ Open `index.html` in any browser and it works — from a USB stick, from a folde
 
 3. Save, reload the page. Order in the list is order on the page — strongest work first.
 
-The six sections are **Jewellery, Acrylics, Works on Paper, Aquarelle, Natural Tempera** and
-**Applied Work**. Three of them hold photographs already; Jewellery, Aquarelle and Tempera are
-laid out and waiting. Titles, years and dimensions are blank throughout — they cannot be read off
-a photograph, so they are Maria's to fill in. Until then each caption reads
-"Title · year · medium · dimensions" as a reminder of what is missing.
+The four sections are **Jewellery, Acrylics, Aquarelle** and **Natural Tempera**. Acrylics and
+Aquarelle hold photographs; Jewellery and Tempera are laid out and waiting. Titles, years and
+dimensions are blank throughout — they cannot be read off a photograph, so they are Maria's to fill
+in. Until then each caption reads "Title · year · medium · dimensions" as a reminder of what is
+missing.
+
+The photographs of the painted chair and the printed tote bag are in `images/applied/` but appear
+nowhere on the page — they belong to none of the four sections. Add entries for them in
+`assets/artworks.js` if you want them shown.
 
 Entries left with `image: ""` show an empty frame with the filename it is waiting for, so the
 layout is visible before the photographs exist. Add or delete entries freely; the sections

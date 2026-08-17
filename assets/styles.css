@@ -364,13 +364,13 @@ a { color: inherit; }
 .gallery-plates .caption { margin: 0; font-size: .95rem; }
 .gallery-plates .caption .title { font-size: 1.15rem; display: block; margin-bottom: .4rem; }
 
-/* ---------- works on paper & aquarelle: mounted sheets, airy ---------- */
+/* ---------- aquarelle: mounted sheets, airy ---------- */
 
-.section-paper { background: var(--paper-cool); }
+.section-aquarelle { background: var(--paper-cool); }
 
 .gallery-sheets {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(19rem, 1fr));
   gap: clamp(2.5rem, 5vw, 4rem) clamp(2rem, 4vw, 3rem);
 }
 .gallery-sheets .plate-frame[data-empty] { aspect-ratio: 3 / 4; }
@@ -383,23 +383,6 @@ a { color: inherit; }
 .gallery-sheets .plate-frame[data-empty] { border-style: dashed; }
 .gallery-sheets .plate-frame:not([data-empty]) img { height: auto; object-fit: unset; }
 .gallery-sheets .caption { text-align: center; }
-
-/* ---------- works on paper: mounted sheets, sized by the sheet ---------- */
-
-.gallery-papers {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(21rem, 1fr));
-  gap: clamp(2.5rem, 5vw, 4rem) clamp(2rem, 4vw, 3rem);
-  align-items: start;
-}
-.gallery-papers .plate-frame {
-  background: #fff;
-  border: 1px solid var(--rule-soft);
-  padding: clamp(.7rem, 1.6vw, 1.25rem);
-  box-shadow: 0 1px 0 rgba(28,26,23,.05);
-}
-.gallery-papers .plate-frame:not([data-empty]) img { height: auto; object-fit: unset; }
-.gallery-papers .plate-frame[data-empty] { aspect-ratio: 4 / 3; border-style: dashed; }
 
 /* ---------- tempera: panels, held open ---------- */
 
@@ -625,10 +608,10 @@ a { color: inherit; }
   .section-head { break-after: avoid; }
   .plate { break-inside: avoid; }
   .gallery-objects { grid-template-columns: repeat(3, 1fr); }
-  .gallery-sheets, .gallery-papers { grid-template-columns: repeat(2, 1fr); }
+  .gallery-sheets { grid-template-columns: repeat(2, 1fr); }
   .gallery-panels { grid-template-columns: repeat(2, 1fr); }
   .gallery-plates .plate { grid-template-columns: 1.6fr 1fr; }
-  .section-jewellery, .section-acrylics, .section-paper, .section-aquarelle,
-  .section-tempera, .section-applied, .section-cv, .section-contact { break-before: page; }
+  .section-jewellery, .section-acrylics, .section-aquarelle,
+  .section-tempera, .section-cv, .section-contact { break-before: page; }
   a { text-decoration: none; }
 }

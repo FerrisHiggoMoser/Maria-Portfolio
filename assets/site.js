@@ -190,6 +190,32 @@
     if (event.key === "ArrowRight") showItem(current + 1);
   });
 
+  /* ---------- the menu (phones): a panel that slides in from the side ---------- */
+
+  var toggle = document.querySelector(".menu-toggle");
+  var nav = document.getElementById("sitenav");
+  var backdrop = document.querySelector(".nav-backdrop");
+
+  function setMenu(open) {
+    nav.classList.toggle("open", open);
+    backdrop.classList.toggle("show", open);
+    toggle.setAttribute("aria-expanded", open ? "true" : "false");
+    document.body.classList.toggle("menu-open", open);
+  }
+
+  if (toggle && nav && backdrop) {
+    toggle.addEventListener("click", function () {
+      setMenu(!nav.classList.contains("open"));
+    });
+    backdrop.addEventListener("click", function () { setMenu(false); });
+    nav.addEventListener("click", function (event) {
+      if (event.target.tagName === "A") setMenu(false);
+    });
+    document.addEventListener("keydown", function (event) {
+      if (event.key === "Escape" && nav.classList.contains("open")) setMenu(false);
+    });
+  }
+
   /* ---------- go ---------- */
 
   renderGalleries();
